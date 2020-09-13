@@ -67,12 +67,7 @@
 
                 // var Icon = this.getIcon();
 
-                    console.log('mc', this.myCity);
-
-
                 for (var i = 0; i < points.length; i++) {
-
-                    console.log('pi', points[i]);
 
                     L.marker([points[i]['latitude'], points[i]['longitude']], {
                         icon: this.getIcon(false)

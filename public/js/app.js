@@ -1996,10 +1996,7 @@ __webpack_require__.r(__webpack_exports__);
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(this.map); // var Icon = this.getIcon();
 
-      console.log('mc', this.myCity);
-
       for (var i = 0; i < points.length; i++) {
-        console.log('pi', points[i]);
         L.marker([points[i]['latitude'], points[i]['longitude']], {
           icon: this.getIcon(false)
         }).bindPopup(points[i]['city']).addTo(this.map);
